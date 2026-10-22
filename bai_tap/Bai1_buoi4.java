@@ -3,7 +3,7 @@ package bai_tap;
 import java.util.Scanner;
 
 public class Bai1_buoi4 {
-    String name;
+    String point;
     // hoành độ
     int x;
 
@@ -11,12 +11,12 @@ public class Bai1_buoi4 {
     int y;
 
     // a) phương thức get/set:
-    public String getName() {
-        return name;
+    public String getPoint() {
+        return point;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setPoint(String point) {
+        this.point = point;
     }
 
     public int getX() {
@@ -42,7 +42,7 @@ public class Bai1_buoi4 {
     public Bai1_buoi4() {
         this.x = 0;
         this.y = 0;
-        this.name = "A";
+        this.point = "A";
     }
 
     // ii) nhận hai số thực làm tham số:
@@ -52,8 +52,8 @@ public class Bai1_buoi4 {
     }
 
     // iii) nhận 1 xâu ký tự và 2 số thực làm tham số
-    public Bai1_buoi4(String name, int x, int y) {
-        this.name = name;
+    public Bai1_buoi4(String point, int x, int y) {
+        this.point = point;
         this.x = x;
         this.y = y;
     }
@@ -62,7 +62,7 @@ public class Bai1_buoi4 {
     // từ bàn phím).
     public void input(Scanner scan) {
         System.out.println("Tên điểm:");
-        this.name = scan.nextLine();
+        this.point = scan.nextLine();
         System.out.println("Hoành độ (x):");
         this.x = scan.nextInt();
         System.out.println("Tung độ (y):");
@@ -72,7 +72,7 @@ public class Bai1_buoi4 {
     // d) in thông tin một điểm ra màn hình dưới dạng: Tên_điểm(Tung_độ, Hoành_độ).
     // Ví dụ: A(2, 4).
     public void infoPrint() {
-        System.out.println(this.name + "(" + this.y + "," + this.x + ")");
+        System.out.println(this.point + "(" + this.y + "," + this.x + ")");
     }
 
     // e) Viết hàm main kiểm tra các phương thức đã cài đặt cho lớp.
